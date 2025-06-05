@@ -29,7 +29,8 @@ jobs:
         run: zip -r vendor.zip vendor
 
       - name: Upload vendor.zip artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.2
+
         with:
           name: vendor-folder
           path: vendor.zip
